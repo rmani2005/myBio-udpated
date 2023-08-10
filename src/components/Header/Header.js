@@ -9,7 +9,7 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{display:"flex",alignItems: "center", color: 'white', marginBottom: '30;'}}>
+        <a style={{display:"flex",alignItems: "center", color: 'white', marginBottom: '30'}}>
           <DiProlog size="3rem" /><Span>Manikandan Ravi</Span>
         </a>
       </Link>
