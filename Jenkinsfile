@@ -9,11 +9,11 @@ agent any
   } 
   stages {
   	stage('PreCond') {
-            agent {
-                docker {
-                    image 'node:14'
-                }	
-            }
+           # // agent {
+            # //   docker {
+            #  //      image 'node:14.17.3'
+            #  //  }	
+           # // }
             
             steps {
                 sh 'node -v'
