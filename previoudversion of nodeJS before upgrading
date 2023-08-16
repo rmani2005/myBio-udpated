@@ -62,3 +62,88 @@ Upgrading /media/rocky/81e509c3-f680-4aca-ae97-4b9ba8161528/myBioSiteJS/portfoli
  react-icons          ^4.2.0  →    ^4.10.1
  styled-components    ^5.3.0  →     ^6.0.4
 
+Before API implementation
+
+{
+  "name": "portfolio_nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "emailjs": "^1.0.11",
+    "express": "^4.17.1",
+    "framer-motion": "^6.5.1",
+    "googleapis": "^121.0.0",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.13.19",
+    "next": "10.2.3",
+    "nodemailer": "^6.8.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7",
+    "typed.js": "^2.0.16",
+    "typescript": "^5.1.6",
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
+
+
+Perfectly working typescript .ts file formats using node ""
+
+Now using node v14.21.3 (npm v6.14.18)
+
+{
+  "name": "portfolio_nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "emailjs": "^1.0.11",
+    "express": "^4.17.1",
+    "framer-motion": "^6.5.1",
+    "googleapis": "^121.0.0",
+    "http-errors": "^1.7.3",
+    "ignore-errors": "^2.0.0",
+    "mongoose": "^5.13.19",
+    "next": "10.2.3",
+    "nodemailer": "^6.8.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7",
+    "typed.js": "^2.0.16",
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.8",
+    "nodemon": "^2.0.6",
+    "typescript": "^5.1.6"
+  }
+}
