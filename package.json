@@ -20,6 +20,7 @@
     "googleapis": "^121.0.0",
     "http-errors": "^1.7.3",
     "ignore-errors": "^2.0.0",
+    "mongodb": "^3.5.9",
     "mongoose": "^5.13.19",
     "next": "10.2.3",
     "nodemailer": "^6.8.0",
