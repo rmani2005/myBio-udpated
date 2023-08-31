@@ -49,7 +49,7 @@ export default function Posts(props: Props) {
   return (
     <Layout>
       <div className="posts-body">
-        <h1 className="posts-body-heading">Top 20 Added Posts</h1>
+       <center> <h1 className="posts-body-heading">Top 20 Added Posts</h1></center>
         {
           posts.length > 0 ? (
             <ul className="posts-list">
@@ -78,7 +78,7 @@ export default function Posts(props: Props) {
           `
         .posts-body{
             width:400px;
-            margin:10px auto;
+            margin:20px auto;
         }
         .posts-body-heading{
             font-family:sans-serif;
@@ -90,7 +90,7 @@ export default function Posts(props: Props) {
         .post-item{
             width:100%;
             padding:10px;
-            border: 1px solid #d5d5d5;
+            border: 5px solid #d5d5d5;
         }
         .post-item-actions{
             display:flex;

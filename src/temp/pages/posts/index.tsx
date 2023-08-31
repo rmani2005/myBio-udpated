@@ -10,8 +10,6 @@ export default function AddPost() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-
-          
         if (title && content) {
             
                 let response = await fetch("http://localhost:3000/api/addPost", {
@@ -20,7 +18,7 @@ export default function AddPost() {
                         "title":title, "content":content
                     }),
                     headers: {
-                       "Accept": 'application/json, text/plain, */*',
+                       'Accept': 'application/json, text/plain, */*',
                        'Content-Type': 'application/json'
                     }
                    

@@ -82,7 +82,7 @@ export default function EditPost({ post: { _id, title, content } }: ContentPageP
         e.preventDefault();
         if (postTitle && postContent) {
             try {
-                let response = await fetch("http://localhost:3000/api/editPost?id=" + _id, {
+                let response = await fetch('http://localhost:3000/api/editPost?id=' + _id, {
                     method: 'POST',
                     body: JSON.stringify({
                         title: postTitle,
@@ -148,7 +148,7 @@ export default function EditPost({ post: { _id, title, content } }: ContentPageP
                     />
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="submit_btn">Add Post</button>
+                    <button type="submit" className="submit_btn">yuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</button>
                 </div>
             </form>
             <style jsx>
