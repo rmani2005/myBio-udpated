@@ -8,6 +8,8 @@ import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 
+import { AddPost } from './posts/index';
+
 const Home = () => {
   return (
     <Layout>
@@ -20,6 +22,7 @@ const Home = () => {
       <Timeline />
       <Acomplishments />
       <Projects />
+      <AddPost/>
     </Layout>
   );
 };

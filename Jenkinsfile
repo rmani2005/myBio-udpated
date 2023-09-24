@@ -9,7 +9,7 @@ agent any
   } 
   stages {
   	stage('PreCond') {
-           agent {
+           agent any{
               docker {
                   image 'node:14.17.3'
               }	
@@ -17,7 +17,7 @@ agent any
             
             steps {
                 sh 'node -v'
-                sh 'npm install'
+                #sh 'npm install'
             }
         }
   

@@ -14,7 +14,7 @@ export default function AddPost() {
           
         if (title && content) {
             
-                let response = await fetch("http://localhost:3000/api/addPost", {
+                let response = await fetch("https://jubilant-tribble-gx7w6x7pq6396qw-3000.app.github.dev/api/addPost", {
                     method: 'POST',
                     body: JSON.stringify({
                         "title":title, "content":content
@@ -78,6 +78,10 @@ export default function AddPost() {
             </form>
             <style jsx>
                 {`
+                    .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    }
                     .form{
                         width:400px;
                         margin:10px auto;

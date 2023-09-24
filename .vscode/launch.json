@@ -1,7 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-      
+      {
+        "type": "java",
+        "name": "test",
+        "request": "launch",
+        "mainClass": "test",
+        "projectName": "myBio-udpated_79ecdba0"
+      },
       {
         "name": "Next.js: debug server-side",
         "type": "node-terminal",

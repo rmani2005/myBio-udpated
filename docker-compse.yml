@@ -1,0 +1,27 @@
+
+#generate docker-compose.yml file
+version: '2'
+services:
+  application:
+    image: ourprivate.docker.reg:5000/ourcompany/buildchaintest:0.1.8-dev
+    volumes:
+      - /var/www/html
+    tty: true
+
+  nginx:
+    build: nginx
+    ports:
+      - "80:80"
+    volumes_from:
+      - application
+    volumes:
+      - ./logs/nginx/:/var/log/nginx
+  php:
+    container_name: mybiositenextjs
+    build: php-fpm
+    expose:
+      - "80"
+    volumes_from:
+      - application
+    volumes:
+      - ./logs/php-fpm/:/var/www/logs
