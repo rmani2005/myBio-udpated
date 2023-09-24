@@ -17,7 +17,7 @@ agent any
             
             steps {
                 sh 'node -v'
-                #sh 'npm install'
+                //sh 'npm install'
             }
         }
   
