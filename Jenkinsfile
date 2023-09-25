@@ -9,7 +9,7 @@ agent any
   } 
   stages {
   	stage('PreCond') {
-           agent {
+           agent any{
               docker {
                   image 'node:14.17.3'
               }	
