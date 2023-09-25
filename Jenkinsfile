@@ -10,7 +10,7 @@ agent any
   stages {
   	stage('Docker image download for NPM Install') 
     {
-           steps {
+           agent {
               docker {
                   image 'node:14.17.3'
               }	
