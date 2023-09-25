@@ -8,23 +8,25 @@ agent any
     HOME = '.'
   } 
   stages {
-  	stage('PreCond') {
+  	stage('Docker image download for NPM Install') 
+    {
            steps {
               docker {
                   image 'node:14.17.3'
               }	
            }
-            
+    }
+    stage('Node install check') 
+    {        
             steps {
                 sh 'node -v'
                 //sh 'npm install'
             }
-        }
-  
-  
-    stage('Build the docker images') {
+    }
+    stage('Build the docker images') 
+    {
       steps {
-	sh 'echo "XXXXXXXXXXXXBuilding block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
+	      sh 'echo "XXXXXXXXXXXXBuilding block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
         sh 'docker build -t manikandanravi9/mybiositenextjs:latest .'
         sh 'echo "XXXXXXXXXXXXBuilding block Completed XXXXXXXXXXXXXXXXXXXXXXXXx"'
       }
