@@ -1,5 +1,5 @@
 pipeline {
-agent any
+agent none
   options {
     buildDiscarder(logRotator(numToKeepStr: '35'))
   }
@@ -10,19 +10,14 @@ agent any
   stages {
   	stage('Docker image download for NPM Install') 
     {
-           agent {
-              docker {
-                  image 'node:14.17.3'
-              }	
-           }
-    }
-    stage('Node install check') 
-    {        
+           agent { docker 'node:14.17.3' }
             steps {
-                sh 'node -v'
+                  sh 'node -v'
                 //sh 'npm install'
             }
+
     }
+    
     stage('Build the docker images') 
     {
       steps {
