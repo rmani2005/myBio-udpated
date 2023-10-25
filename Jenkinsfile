@@ -21,7 +21,7 @@ agent any
     stage('Build the docker images') 
     {
       steps {
-	      sh 'echo "XXXXXXXXXXXXBuilding block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
+	sh 'echo "XXXXXXXXXXXXBuilding block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
         sh 'docker build -t manikandanravi9/mybiositenextjs:latest .'
         sh 'echo "XXXXXXXXXXXXBuilding block Completed XXXXXXXXXXXXXXXXXXXXXXXXx"'
       }
